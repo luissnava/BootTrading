@@ -6,6 +6,10 @@ import time
 
 apikey = "bkfHQs0AcAY1QQjooCeqS1UrdOD70nAQJf5XJzlf9U3YBqjHU4vkYeoFMbpF75sL"
 secret = "qHHbqzOi522ZeXWZfBEJwsJDQLJqibbZwTKOemDZx7kPsOI2BO2uQgyIurOrRhLL"
+
+tokens_apalancados = ['XRPUP/USDT','XRPDOWN/USDT','ADAUP/USDT','ADADOWN/USDT','TRXUPUSDT','TRXDOWN/USDT']
+
+
 bot_config = {
 	'name' : 'bot_spot',
 	
