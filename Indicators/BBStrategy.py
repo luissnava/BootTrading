@@ -1,7 +1,7 @@
 import pandas_ta as ta 
 import pandas as pd 
-
-class BBStrategy:
+from pyjuque.Strategies import StrategyTemplate
+class BBStrategy(StrategyTemplate):
 	def __init__(self, bb_len = 20, n_std = 2.0, rsi_len = 14, rsi_overbought = 60, rsi_oversold = 40):
 
 		self.bb_len = bb_len

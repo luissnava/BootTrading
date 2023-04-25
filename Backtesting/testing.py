@@ -1,11 +1,11 @@
 from GA import Population
-from stratcode import BBStrategy
+from BBStrategyFutures import BBStrategy
 from utils import ccxt_ohlcv_to_dataframe
 
 import ccxt
 
 exchange = ccxt.binance()
-symbol = 'ETH/USDT'
+symbol = 'XRP/USDT'
 timeframe = '15m'
 limit = 1000
 ohlcv = exchange.fetch_ohlcv(symbol, timeframe, limit)

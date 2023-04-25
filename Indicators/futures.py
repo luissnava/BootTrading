@@ -1,21 +1,24 @@
+apikey = "bkfHQs0AcAY1QQjooCeqS1UrdOD70nAQJf5XJzlf9U3YBqjHU4vkYeoFMbpF75sL"
+secret = "qHHbqzOi522ZeXWZfBEJwsJDQLJqibbZwTKOemDZx7kPsOI2BO2uQgyIurOrRhLL"
 from pyjuque.Bot import defineBot
-from BBStrategy import BBStrategy
+from BBStrategyFutures import BBStrategy
 
 import pandas as pd
 import time
 
 bot_config = {
-	'name' : 'bot0',
+	'name' : 'bot_futures',
 	
 	'exchange' : {
 		'name' : 'binance',
 		'params' : {
-			'api_key': '0gXMyPphJJoOhPlgEKDyUdBjYjwsufrlVBkdMKT7adznsE3j22aREo1FcyPxS2AQ',
-			'secret' : 'kJrk9nVvMMZ4XV80M5QZj9SvJFUpmbmiNNjSh9mIZbL5cAdUM3WntJibIdEAyTr8'
+			'api_key': apikey,
+			'secret' : secret,
+			
 		},
 	},
-
-	'symbols' : ['DOT/USDT', 'SOL/USDT','ADA/USDT', 'XRP/USDT','TRX/USDT'],
+	
+	'symbols' : ['ADA/USDT', 'XRP/USDT','TRX/USDT'],
 
 	'starting_balance' : 10,
 
@@ -40,7 +43,7 @@ bot_config = {
 
 	'exit_settings' : {
 
-		'take_profit' : 2,
+		'take_profit' : 3,
 
 		'stop_loss_value': 1
 	},
